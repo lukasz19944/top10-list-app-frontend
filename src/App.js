@@ -8,6 +8,7 @@ import Header from "./components/Layout/Header";
 import HomePage from "./components/Layout/HomePage";
 import AllLists from "./components/List/AllLists";
 import ListDetails from "./components/ListDetails/ListDetails";
+import AddList from "./components/List/AddList";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/allLists" component={AllLists} />
           <Route exact path="/allLists/:id" component={ListDetails} />
+          <Route exact path="/addList" component={AddList} />
         </div>
       </BrowserRouter>
     </Provider>

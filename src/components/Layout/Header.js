@@ -29,7 +29,7 @@ class Header extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item mr-3" style={{ marginTop: "4.5px" }}>
                 <Link
-                  to="#"
+                  to="/addList"
                   className="btn btn-sm btn-outline-dark font-weight-bold"
                 >
                   ADD NEW
