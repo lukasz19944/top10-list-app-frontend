@@ -33,7 +33,10 @@ class List extends Component {
                 <li className="list-group-item text-left item-third">
                   <strong>3. </strong> {list.items[2].itemName}
                 </li>
-                <Link to={"#"} style={{ textDecoration: "none" }}>
+                <Link
+                  to={`/allLists/${list.id}`}
+                  style={{ textDecoration: "none" }}
+                >
                   <li className="list-group-item item-more">More</li>
                 </Link>
               </ul>

@@ -7,6 +7,7 @@ import store from "./store";
 import Header from "./components/Layout/Header";
 import HomePage from "./components/Layout/HomePage";
 import AllLists from "./components/List/AllLists";
+import ListDetails from "./components/ListDetails/ListDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Header />
           <Route exact path="/" component={HomePage} />
           <Route exact path="/allLists" component={AllLists} />
+          <Route exact path="/allLists/:id" component={ListDetails} />
         </div>
       </BrowserRouter>
     </Provider>
