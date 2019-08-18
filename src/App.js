@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import store from "./store";
 import Header from "./components/Layout/Header";
 import HomePage from "./components/Layout/HomePage";
+import AllLists from "./components/List/AllLists";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <div className="App">
           <Header />
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/allLists" component={AllLists} />
         </div>
       </BrowserRouter>
     </Provider>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import img from "../../../resources/img.png";
+import img from "../../resources/img.png";
 import "./List.css";
 
 class List extends Component {
@@ -25,13 +25,13 @@ class List extends Component {
             <div className="col-md-4 d-none d-lg-block">
               <ul className="list-group">
                 <li className="list-group-item text-left item-first">
-                  <strong>1. </strong> {list.items[0]}
+                  <strong>1. </strong> {list.items[0].itemName}
                 </li>
                 <li className="list-group-item text-left item-second">
-                  <strong>2. </strong> {list.items[1]}
+                  <strong>2. </strong> {list.items[1].itemName}
                 </li>
                 <li className="list-group-item text-left item-third">
-                  <strong>3. </strong> {list.items[2]}
+                  <strong>3. </strong> {list.items[2].itemName}
                 </li>
                 <Link to={"#"} style={{ textDecoration: "none" }}>
                   <li className="list-group-item item-more">More</li>
